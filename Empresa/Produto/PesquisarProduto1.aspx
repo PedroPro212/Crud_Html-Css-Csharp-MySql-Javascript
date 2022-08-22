@@ -9,7 +9,7 @@
         <br />
         <div class="rows">
             <div class="col-sm-3">
-                <asp:TextBox runat="server" ID="txtPesquisa" CssClass="form-control" placeholder="Digite o produto aqui para buscar"></asp:TextBox>
+                <asp:TextBox runat="server" ID="txtPesquisa" CssClass="form-control" placeholder="Buscar Produto:"></asp:TextBox>
             </div>
             <div class="col-sm-5">
             </div>
