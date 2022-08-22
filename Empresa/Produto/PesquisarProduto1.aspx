@@ -1,20 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PesquisarProduto1.aspx.cs" Inherits="Empresa.Produto.PesquisarProduto1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        <h1>Pesquisar Produtos</h1>
-    </div>
-    <br />
-    <br />
-    <div class="rows">
-        <div class="col-sm-3">
-            <asp:TextBox runat="server" ID="txtPesquisa" CssClass="form-control" placeholder="Digite o produto aqui para buscar"></asp:TextBox>
-        </div>
-        <div class="col-sm-5">
+
+    <div class="box">
+        <div class="container">
+            <h1>Pesquisar Produtos</h1>
         </div>
         <br />
-        <div class="row text-center">
-            <asp:Button runat="server" ID="btnPesquisa" CssClass="btn btn-primary" OnClick="btnPesquisa_Click" Text="Pesquisar" />
-            <asp:Button runat="server" ID="btnCadastro" CssClass="btn btn-success" OnClick="btnCadastro_Click" Text="Cadastrar" />
+        <br />
+        <div class="rows">
+            <div class="col-sm-3">
+                <asp:TextBox runat="server" ID="txtPesquisa" CssClass="form-control" placeholder="Digite o produto aqui para buscar"></asp:TextBox>
+            </div>
+            <div class="col-sm-5">
+            </div>
+            <br />
+            <div class="row text-center">
+                <asp:Button runat="server" ID="btnPesquisa" CssClass="btn btn-primary" OnClick="btnPesquisa_Click" Text="Pesquisar" />
+                <asp:Button runat="server" ID="btnCadastro" CssClass="btn btn-success" OnClick="btnCadastro_Click" Text="Cadastrar" />
+            </div>
         </div>
     </div>
     <br />
@@ -29,6 +32,6 @@
                 <asp:ButtonField ButtonType="Link" CommandName="editar" ControlStyle-CssClass="btn btn-warning" Text="Editar" />
                 <asp:ButtonField ButtonType="Link" CommandName="excluir" ControlStyle-CssClass="btn btn-danger" Text="Excluir" />
             </Columns>
-        </asp:GridView>
+        </asp:GridView> 
     </div>
-</asp:Content>
+</asp:Content> 

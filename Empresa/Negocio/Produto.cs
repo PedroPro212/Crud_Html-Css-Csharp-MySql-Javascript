@@ -39,7 +39,6 @@ namespace Empresa.Negocio
                 if(valor.Equals("") == false)
                 {
                     comando.CommandText += $" AND valor = @valor";
-                    valor = 0.ToString("C");
                     comando.Parameters.Add(new MySqlParameter("valor", valor));
                 }
                 if(id.Equals("") == false)
